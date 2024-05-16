@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.head-page {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 14rem;
+background-color: #533da9;
+height: 5.5rem;
+}
+
+.logo {
+width: 77%;
+height: auto;
+}
+
+.titre-header {
+font-weight: 600;
+font-size: large;
+}
+
+
+
+
