@@ -1,42 +1,24 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-image: url("./assets/images/fond.png");
+  background-size: cover; /* Assure que l'image de fond couvre toute la zone */
+  background-position: center; /* Centre l'image de fond */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.cartoon-title {
+    font-family: 'Freckle Face', cursive;
+    font-size: 3em;
+    color: #ff6347; /* Tomato color */
+    text-shadow: 
+        2px 2px 0 #000,   /* black shadow */
+        4px 4px 0 #fff,   /* white shadow */
+        6px 6px 0 #000;   /* black shadow */
+    background-color: #ffeb3b; /* Yellow background */
+    padding: 10px;
+    border: 4px solid #000; /* Black border */
+    border-radius: 10px;
+    display: inline-block;
+    transform: rotate(-2deg); /* Slight tilt for a playful effect */
+    margin: 20px 0;
 }
