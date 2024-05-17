@@ -1,3 +1,7 @@
+
+main {
+  flex: 1;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,16 +17,40 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   place-items: center;
   min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 70px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("./assets/image/fond.png");
   background-size: cover;
-  box-sizing: border-box;
+  background-attachment: fixed; 
 }
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
 
 button {
   border-radius: 8px;
@@ -44,9 +72,7 @@ button:focus-visible {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
   width: 100%;
   display: flex;
   flex-direction: row-reverse;

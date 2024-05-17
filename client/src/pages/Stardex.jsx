@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import StardexCard from "../components/StardexCard/StardexCard";
 import "../App.css";
+import StardexCard from "../components/StardexCard/StardexCard";
 import data from "../assets/protojam.json";
 
 export default function Stardex() {

@@ -69,7 +69,11 @@
 .container {
   cursor: pointer;
   transition: transform 0.4s;
-  padding-top: 4rem;
+  margin-top: auto;
+  margin-bottom: 10px; /* Ajustement pour centrer verticalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover .container {
@@ -187,4 +191,3 @@
     transform: rotate(-2deg); /* Slight tilt for a playful effect */
     margin: 20px 0;
 }
-
