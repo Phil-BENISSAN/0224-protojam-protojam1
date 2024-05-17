@@ -19,5 +19,5 @@
 
 .container:hover .glass {
   transform: rotate(0deg);
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
