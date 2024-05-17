@@ -4,7 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 
 import Home from "./pages/Home";
-import Stardex from "./pages/Stardex.jsx";
+import Stardex from './pages/Stardex.jsx';
+import Trophies from "./pages/Trophies.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/stardex",
         element: <Stardex />,
+      },
+      {
+        path: "/Trophies",
+        element: <Trophies />,
       },
     ],
   },

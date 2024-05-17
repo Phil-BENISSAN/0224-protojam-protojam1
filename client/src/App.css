@@ -1,0 +1,27 @@
+body {
+  background-image: url("./assets/images/fond.png");
+  background-size: cover; /* Assure que l'image de fond couvre toute la zone */
+  background-position: center; /* Centre l'image de fond */
+  background-repeat: no-repeat;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+.cartoon-title {
+    font-family: 'Freckle Face', cursive;
+    font-size: 3em;
+    color: #ff6347; /* Tomato color */
+    text-shadow: 
+        2px 2px 0 #000,   /* black shadow */
+        4px 4px 0 #fff,   /* white shadow */
+        6px 6px 0 #000;   /* black shadow */
+    background-color: #ffeb3b; /* Yellow background */
+    padding: 10px;
+    border: 4px solid #000; /* Black border */
+    border-radius: 10px;
+    display: inline-block;
+    transform: rotate(-2deg); /* Slight tilt for a playful effect */
+    margin: 20px 0;
+}
+
