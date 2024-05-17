@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
+import { useState } from 'react'
 import "./flip.css";
 import Button from "../card/button/Button";
+import Modal from "../card/modal/Modal";
 
 const propTypes = {
   data: PropTypes.shape({
@@ -13,7 +15,16 @@ const propTypes = {
 };
 
 const Flip = ({ data }) => {
-  const { date, true_title, details, image } = data;
+  const { date, true_title, details, image, info } = data;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="card">
@@ -30,10 +41,13 @@ const Flip = ({ data }) => {
             <div className="description">
               <p className="card-footer">{details}</p>
             </div>
-              <Button className="btn" />
+            <Button className="btn" onClick={handleClick} />
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <Modal onClose={handleClose} info={info} />
+      )}
     </div>
   );
 };
