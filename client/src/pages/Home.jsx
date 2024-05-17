@@ -11,26 +11,22 @@ export default function Home() {
   const [showWhiteScreen, setShowWhiteScreen] = useState(false);
 
   useEffect(() => {
-    if (MilkyWay) {
-        MilkyWay("ended", () => {
+    if (isVideoPlaying) {
             setTimeout(() => {
                 setIsVideoPlaying(false);
-              }, 10000);
+                setShowWhiteScreen(true);
+        }, 10000)
+    }
+    if(showWhiteScreen) {
         setTimeout(() => {
           setShowWhiteScreen(false);
         }, 1000);
-      });
     }
-  }, [false]);
+  }, [isVideoPlaying]);
 
   return (
     <>
-      {isVideoPlaying && (
-        <video id="MilkyWay" autoPlay muted>
-          <source src="assets/MilkyWay.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      )}
+      {isVideoPlaying && <MilkyWay />}
       {showWhiteScreen && <div className="white-page"></div>}
       {!showWhiteScreen && !isVideoPlaying && (
         <>
