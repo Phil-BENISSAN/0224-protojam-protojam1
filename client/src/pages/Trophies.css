@@ -1,0 +1,87 @@
+.trophies-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.trophies-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: #3e2723;
+  margin-bottom: 20px;
+}
+
+.trophies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trophy-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #ffeb3b;
+  border: 3px solid #3e2723;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 0 #3e2723;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.trophy-placeholder:hover {
+  transform: scale(1.1);
+}
+
+.trophy-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: darkred;
+}
+
+.popup-image {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+}
