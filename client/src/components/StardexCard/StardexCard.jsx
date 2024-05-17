@@ -1,12 +1,4 @@
-import "./StardexCard.css";
-
-
- function StardexCard() {
-
-  return (
-    <h1>hi</h1>
-  )
-
+import "./StardexCard.css"
+export default function Stardex() {
+    return 
 }
-
-export default StardexCard;

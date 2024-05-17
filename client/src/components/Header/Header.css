@@ -8,6 +8,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .header-title {
@@ -21,6 +26,7 @@
 .header-nav {
   display: flex;
   gap: 15px;
+  padding-right: 3rem;
 }
 
 .header-link {
@@ -34,10 +40,15 @@
   border-radius: 12px;
   transition: all 0.3s;
   box-shadow: 3px 3px 0 #3e2723;
+ 
 }
 
 .header-link:hover {
   background-color: #ff9100;
   transform: translate(-3px, -3px);
   box-shadow: 6px 6px 0 #3e2723;
+}
+
+body {
+  padding-top: 70px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
 }
