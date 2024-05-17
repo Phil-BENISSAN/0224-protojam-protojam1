@@ -108,7 +108,6 @@ export default function Stardex() {
             {selectedItem && (
               <>
                 <h1>{selectedItem.true_title}</h1>
-                <p>{selectedItem.date}</p>
                 <p>{selectedItem.details}</p>
                 <ul>
                   {selectedItem.info.map((infoItem, index) => (
