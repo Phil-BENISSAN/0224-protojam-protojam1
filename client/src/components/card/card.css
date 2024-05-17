@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 4rem;
+}

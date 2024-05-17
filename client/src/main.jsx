@@ -1,10 +1,10 @@
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import App from "./App.jsx";
+import "./index.css";
 
 import Home from "./pages/Home";
-import Stardex from './pages/Stardex.jsx';
+import Stardex from "./pages/Stardex.jsx";
 
 const router = createBrowserRouter([
   {
