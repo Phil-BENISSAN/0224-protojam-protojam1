@@ -1,7 +1,7 @@
 .card {
   overflow: visible;
   width: 290px;
-  height: 400px;
+  height: 900px;
 }
 
 .content {
@@ -13,7 +13,8 @@
   border-radius: 5px;
 }
 
-.front, .back {
+.front,
+.back {
   background-color: #151515;
   position: absolute;
   width: 100%;
@@ -35,11 +36,19 @@
 
 .back::before {
   position: absolute;
-  content: ' ';
+  content: " ";
   display: block;
   width: 160px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    #ff9966,
+    transparent
+  );
   animation: rotation_481 5000ms infinite linear;
 }
 
@@ -72,8 +81,8 @@
 }
 
 .card-img {
-  width: 90%;
-  height: 50%;
+  width: 70%;
+  height: 40%;
   border-radius: 1rem;
 }
 
@@ -82,13 +91,13 @@
   color: white;
 }
 
-.front .front-content  {
+.front .front-content {
   position: absolute;
   width: 100%;
   height: 90%;
   display: flex;
   flex-direction: column;
-  }
+}
 
 .front-content {
   background-color: #00000055;
@@ -157,8 +166,6 @@
   filter: blur(15px);
   animation: floating 2600ms infinite linear;
 }
-
-
 
 #bottom {
   background-color: #ff8866;

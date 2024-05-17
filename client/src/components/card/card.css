@@ -1,12 +1,12 @@
-.container {
+.containers {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
+  margin: 4rem 0;;
 }
 
-.container .glass {
+.containers .glass {
   position: relative;
   width: 180px;
   height: 200px;
@@ -17,7 +17,7 @@
   transform: rotate(calc(var(--r) * 1deg));
 }
 
-.container:hover .glass {
+.containers:hover .glass {
   transform: rotate(0deg);
   margin: 0 2rem;
 }
