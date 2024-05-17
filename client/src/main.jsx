@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/Stardex",
+        path: "/stardex",
         element: <Stardex />,
       },
     ],
