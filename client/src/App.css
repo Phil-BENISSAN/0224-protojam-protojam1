@@ -2,7 +2,9 @@ body {
   background-image: url("./assets/images/fond.png");
   background-size: cover; /* Assure que l'image de fond couvre toute la zone */
   background-position: center; /* Centre l'image de fond */
+  background-repeat: no-repeat;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
 

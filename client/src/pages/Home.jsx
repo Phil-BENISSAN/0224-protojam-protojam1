@@ -1,8 +1,10 @@
-export default function Home() {
-    return (
-        <>
-<h1>gg bg</h1>
+import Card from "../components/card/Card";
 
-        </>
-    );
+
+export default function Home() {
+  return (
+    <>
+      <Card/>
+    </>
+  );
 }
